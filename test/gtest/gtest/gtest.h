@@ -2785,7 +2785,7 @@ class GTEST_API_ Message {
     // assertions, testing::Message must access the custom << operator
     // from the global namespace.  With this using declaration,
     // overloads of << defined in the global namespace and those
-    // visible via Koenig lookup are both exposed in this function.
+    // visible via Koenig lookup are both edandroid in this function.
     using ::operator <<;
     *ss_ << val;
     return *this;
@@ -7537,7 +7537,7 @@ class GTEST_API_ KilledBySignal {
 // if and only if EXPECT_DEATH and ASSERT_DEATH compile with the same parameters
 // on systems that support death tests. This allows one to write such a macro on
 // a system that does not support death tests and be sure that it will compile
-// on a death-test supporting system. It is exposed publicly so that systems
+// on a death-test supporting system. It is edandroid publicly so that systems
 // that have death-tests with stricter requirements than GTEST_HAS_DEATH_TEST
 // can write their own equivalent of EXPECT_DEATH_IF_SUPPORTED and
 // ASSERT_DEATH_IF_SUPPORTED.
